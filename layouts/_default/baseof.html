@@ -2,6 +2,7 @@
 <html lang='{{ .Site.LanguageCode }}'>
 {{ partial "head.html" . -}}
 <body class="flex flex-col min-h-screen bg-white dark:bg-gray-900 antialiased">
+{{- partial "dev/dev-tools.html" . -}}
 {{ partial "header.html" . -}}
 <main class="flex-1 grow mx-auto w-screen max-w-screen-2xl px-6 sm:px-7 xl:px-8 2xl:px-10 pt-4 sm:pt-16">
   {{- block "main" . }}{{- end -}}
